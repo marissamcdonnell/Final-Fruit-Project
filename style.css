@@ -1,0 +1,311 @@
+/*style sheet for week 7 project*/
+html {
+    background-image: url('images/Culinary_fruits_front_view.png');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 64px;
+    padding: 20px 30px 0 30px;
+    color: red;
+    text-align: center;
+    font-family: 'Actor', 'sans-serif';
+}
+
+h3 {
+    text-align: center;
+    padding: 0 90px 0 90px;
+    font-size: 34px;
+    color: red;
+    margin-top: -14px;
+    font-family: 'Actor', 'sans-serif';
+}
+
+p {
+    text-align: center;
+    padding: 0 80px;
+    font-size: 18px;
+    line-height: 28px;
+    color: red;
+    font-family: 'Actor', 'sans-serif';
+}
+
+button {
+    font-family: 'Actor', 'sans-serif';
+    font-size: 20px;
+    display: flex;
+    padding: 12px 77px;
+    /*background-color: red;*/
+    left: 27%;
+    opacity: 1;
+    margin-top: 35px;
+    position: relative;
+    color: white;
+    border-radius:10px;
+    background: linear-gradient(45deg,red,#ffea47,red);
+    background-size: 400% 400%;
+    outline: none;
+}
+
+button:hover {
+    animation: gradient 10s ease infinite;
+    box-shadow: 2px 2px 5px darkgrey;
+    font-size: 25px;
+    left: 26%;
+}
+
+/*header and top nav*/
+.header {
+    height: 108px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 3px 17px black;
+}
+
+.header-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.yellow-header {
+    background-color: #fff8bf;
+    padding: 10px 40px 0 40px;
+    display: inline-block;
+}
+
+.title {
+    font-family: 'Luckiest Guy', 'sans-serif';
+    font-size: 37px;
+    color: #00701d;
+    text-shadow: -1px 2px #002309;
+}
+
+.nav {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav ul {
+    white-space: nowrap;
+    position: fixed;
+    margin-top: -22px;
+    margin-left: -10px;
+    border: 0;
+}
+
+.nav li{
+    display: inline-block;
+    font-family: 'Actor', 'sans-serif';
+    font-size: 20px;
+    padding: 0 26px;
+    color: #00701d;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav li:hover {
+    text-transform: uppercase;
+    color: #ffea47;
+}
+
+.nav li:active {
+    background-color: #ffea47;
+}
+
+/* Beginning of the body classes*/
+.body {
+    background-color: rgba(255, 248, 191, 0.8);
+    position: fixed;
+    top: 108px;
+    max-width: 900px;
+    margin: auto;
+    /*opacity: 0.8;*/
+    width: 462px;
+    bottom: 10px;
+    padding: 10px 20px 0 20px;
+    display: inline-block;
+    z-index: 2;
+    font-family: 'Actor', 'sans-serif';
+}
+
+.body h1 {
+    font-weight: 900;
+    font-size: 64px;
+    padding: 20px 30px 0 30px;
+    color: red;
+    text-align: center;
+}
+
+.body h3 {
+    text-align: center;
+    padding: 0 90px 0 90px;
+    font-size: 34px;
+    color: red;
+    margin-top: -14px;
+}
+
+.body p {
+    text-align: center;
+    padding: 0 80px;
+    font-size: 18px;
+    line-height: 28px;
+    color: red;
+}
+
+.body button {
+    font-family: 'Actor', 'sans-serif';
+    font-size: 20px;
+    display: flex;
+    padding: 12px 77px;
+    /*background-color: red;*/
+    left: 27%;
+    opacity: 1;
+    margin-top: 35px;
+    position: relative;
+    color: white;
+    border-radius:10px;
+    background: linear-gradient(45deg,red,#ffea47,red);
+    background-size: 400% 400%;
+    outline: none;
+}
+
+.body button:hover {
+    animation: gradient 10s ease infinite;
+    box-shadow: 2px 2px 5px darkgrey;
+    font-size: 25px;
+    left: 26%;
+}
+
+@keyframes gradient {
+    50% {
+        background-position: 100% 0;
+    }
+}
+/* box on left with fruit list*/
+.side {
+    margin: 0 0 0 550px;
+    background-color: rgba(255, 248, 191, 0.92);
+    position: fixed;
+    top: 152px;
+    width: 350px;
+    bottom: 46px;
+    box-shadow: 4px 4px 15px rgba( 0, 0, 0, 0.5);
+    font-family: 'Actor', 'sans-serif';
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.side ul {
+    list-style: none;
+    padding: 0 37px;
+}
+
+.side li {
+    font-size: 24px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: red;
+    padding-bottom: 25px;
+}
+
+.side img {
+    height: 113px;
+    padding-right: 26px;
+    vertical-align: middle;
+}
+
+.side::-webkit-scrollbar {
+    width: 1em;
+}
+
+.side::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.side::-webkit-scrollbar-thumb {
+    background-color: orange;
+    outline: 1px solid yellow;
+    border-radius: 10px;
+}
+
+/*End of home page*/
+
+/*Beginning of mixing and squishing*/
+.mix {
+    background-color: rgba(255, 248, 191, 0.8);
+    position: absolute;
+    top: 108px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.mixLeft {
+    display: inline-block;
+    position: fixed;
+    width: 550px;
+    top: 142px;
+    left: 30px;
+    padding-top: 10px;
+    bottom: 10px;
+}
+
+.fruitL2 {
+    background-color: rgba(255, 248, 191, 0.92);
+    position: inherit;
+    width: 490px;
+    top: 250px;
+    bottom: 10px;
+    left: 67px;
+    box-shadow: 4px 4px 15px rgba( 0, 0, 0, 0.5);
+    font-family: 'Actor', 'sans-serif';
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.fruitL2::-webkit-scrollbar {
+    width: 1em;
+}
+
+.fruitL2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.fruitL2::-webkit-scrollbar-thumb {
+    background-color: orange;
+    outline: 1px solid yellow;
+    border-radius: 10px;
+}
+
+#fruitsLB ul{
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.fruitL2 ul{
+    display: inline-block;
+    padding-right: 10px;
+    text-align: center;
+    width: 400px;
+    line-height: 2em;
+}
+
+.fruitL2 li{
+    padding-bottom: 30px;
+    padding-right: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.fruitL2 img {
+    display: block;
+    padding-left: 22px;
+}
