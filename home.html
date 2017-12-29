@@ -7,31 +7,120 @@
     <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
+<style>
+    .fruit1 {
+        height: 100px;
+        display: inline-block;
+        padding: 10px;
+        float: left;
+    }
 
+    .fruit4 {
+        height: 100px;
+        display: inline-block;
+        padding: 10px;
+        float: left;
+    }
+
+    .fruit2{
+        height: 100px;
+        display: inline-block;
+        padding: 10px;
+        float: right;
+
+    }
+    .fruit3{
+        height: 100px;
+        display: inline-block;
+        padding: 10px;
+        left: 300px;
+        position: fixed;
+    }
+</style>
+</head>
+<!--<body>-->
+
+<!--<h1>Hello World</h1>-->
+
+<!--<p>Click the button to add a class attribute with the value of "democlass" to the h1 element.</p>-->
+
+<!--<img class="fuck" src="image.png" alt="broken image" onclick="myFunction()">-->
+
+<!--<script>-->
+    <!--function myFunction() {-->
+        <!--document.getElementsByClassName("fuck")[0].setAttribute("class", "democlass");-->
+    <!--}-->
+<!--</script>-->
+
+<!--</body>-->
 <body>
 <main>
-    <div class = "header">
-        <div class = "header-container">
-            <div class = "yellow-header">
-                <h2 class = "title">Squish Fruit</h2>
-            </div>
-            <div class = "nav">
-                <ul>
-                    <li>Home</li>
-                    <li><a href="#news">Fruits</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class = "body">
-        <p>Let's see if this shows page two?</p>
-    </div>
+
+
+    <img id = "0" class="fruit1" src="https://www.iconfinder.com/data/icons/fruits/128/Mango.png">
+    <img id = "1" class="fruit2" src="https://www.iconfinder.com/data/icons/fruits/128/Orange.png">
+    <img id = "2" class="fruit3" src="https://www.iconfinder.com/data/icons/fruits/128/Peach.png">
+    <img id = "3" class="fruit4" src="https://www.iconfinder.com/data/icons/fruits/128/Peach.png">
+    <p class="clicksP">Hey</p>
+    <script>
+
+
+        for(var i = 0; i < 3; i++) {
+            var z = ["fruit1", "fruit2"];
+            $fruitListA = $.getJSON('package.json', function(data){
+                var fruitList = Object.keys(data.data).map(function(x){
+                    return data.data[x].id;
+                });
+                return fruitList;
+
+            });
+var clicks = 0;
+            (function(i) {
+                console.log($fruitListA);
+                var $k = $(document.getElementById([i]));
+                console.log($k);
+                    $k.click( function(){
+
+                        clicks++;
+                        console.log(clicks);
+                        var x = document.getElementsByClassName(z[i])[0].getAttribute("src");
+//                        debugger;
+                            if(clicks === 1){
+                                document.getElementsByClassName("fruit3")[0].setAttribute("src", x);
+                            }
+                            if(document.getElementsByClassName("fruit4")[0].getAttribute("src") === "https://www.iconfinder.com/data/icons/fruits/128/Peach.png" && clicks === 2){
+                                document.getElementsByClassName("fruit4")[0].setAttribute("src", x);
+                            }
+
+                            if (clicks === 3){
+                                clicks = 0;
+                            }
+
+
+                });
+            }(i));
+        }
+
+//        function changeImage() {
+//            var z = ["fruit2", "fruit3"];
+//            var x = document.getElementsByClassName("fruit1")[0].getAttribute("src");
+//
+//            for (var i = 0; i < z.length; i++) {
+//
+//                if (clicks2 = 1) {
+//                    document.getElementsByClassName(z[i])[0].setAttribute("src", x);
+//                } else if(clicks2 = 2) {
+//                    document.getElementsByClassName(z[i])[0].setAttribute("src", x);
+//                } else {
+//                    clicks2 = 0;
+//                }
+//            }
+//            console.log(clicks2);
+//            return clicks2;
+//        }
+
+    </script>
+
 </main>
 </body>
-<script src="main2.js">
-
-</script>
 </html>
