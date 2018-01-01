@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body id="index">
 <main>
     <!-- Header section with top Nav-->
     <div class = "header">
@@ -18,12 +18,14 @@
             <h2 class = "title">Squish Fruit</h2>
               </div>
               <div class = "nav">
-            <ul>
-                <li><span class = "home">Home</span></li>
-                <li><span class = "fruits">Fruits</span></li>
-                <li><span class = "contact">Contact</span></li>
-                <li><span class = "about">About</span></li>
-            </ul>
+                  <nav>
+                      <ul>
+                          <li class = "home"><a class = "active" href = "index.html">Home</a></li>
+                          <li class = "fruits"><a href = "fruits.html">Fruits</a></li>
+                          <li class = "about"><a href = "about.html">About</a></li>
+
+                      </ul>
+                  </nav>
              </div>
         </div>
     </div>
@@ -56,41 +58,9 @@
                 <p>
                     Please click the button below to begin.
                 </p>
-                <button id = "getStarted" style="left:22%">Squishables</button>
+            <a href = "fruits.html" id = "getStarted"><button id= "getStarted">Squishables</button></a>
         </div>
     </div>
-
-    <!-- Fruits Page-->
-    <div class = "mix">
-        <div class = "mixLeft">
-            <h3 style = "margin-bottom: 10px;">Now the real fun begins!</h3>
-            <p id ="clickhide"> Pick three of the fruits from the list below.</p>
-            <button id="add-button">Add to Bowl</button>
-            <div class = "fruitL2">
-                <div id = "fruitsLB">
-
-                </div>
-            </div>
-        </div>
-        <div class = "mix-right-bowl">
-            <img src="images/frontbowl.png" alt="Green Bowl" style="z-index: 50;">
-            <img src="images/backbowl.png">
-        </div>
-            <div>
-                <div>
-                    <img class = "fruit-boxes-1" src = "images/greenbowl.png">
-                    <img class = "fruit-boxes-2" src = "images/greenbowl.png">
-                    <img class = "fruit-boxes-3" src = "images/greenbowl.png">
-                </div>
-            </div>
-
-    </div>
-
-
-
-
-
-
 
 
 </main>

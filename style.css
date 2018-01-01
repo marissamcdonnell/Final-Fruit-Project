@@ -108,13 +108,20 @@ button:hover {
     text-decoration: none;
 }
 
-.nav li:hover {
-    text-transform: uppercase;
-    color: #ffea47;
+.nav a{
+    text-decoration: none;
+    color: #00701d;
 }
 
-.nav li:active {
-    background-color: #ffea47;
+.nav li:hover {
+    text-transform: uppercase;
+    color: #fff8bf;
+    padding: 6px 22px;
+}
+
+.nav a.active {
+    background-color: #fff8bf;
+    padding: 6px 22px;
 }
 
 /* Beginning of the body classes*/
@@ -348,4 +355,71 @@ button:hover {
 
 #add-button {
     margin-top: 11px;
+}
+
+#getStarted {
+    left:22%;
+    text-decoration: none;
+}
+
+/*animation images for squishing fruit*/
+
+.squish {
+    left: 29%;
+}
+
+.pestle {
+    top: 30px;
+    left: 602px;
+    position: relative;
+    height: 300px;
+    transform: rotate(16deg);
+}
+
+.squishFruit {
+    position: fixed;
+    width: 437px;
+    top: 454px;
+    left: 626px;
+}
+
+.squishFruit2 {
+    position: fixed;
+    width: 437px;
+    top: 409px;
+    left: 626px;
+}
+
+.squishFruit3 {
+    position: fixed;
+    width: 437px;
+    top: 399px;
+    left: 626px;
+}
+
+/* alert box */
+
+.alert {
+    background-image: url(images/alertFruit.png);
+    height: 1000px;
+    top: 10px;
+    width: 1000px;
+    left: 35px;
+    position: fixed;
+    z-index: 100;
+}
+
+.result {
+    position: absolute;
+    top: 412px;
+    left: 481px;
+}
+
+.result:hover {
+    left: 481px;
+}
+
+#finishM {
+    padding: 0;
+    margin: 328px auto auto -34px;
 }
