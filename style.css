@@ -406,6 +406,7 @@ button:hover {
     width: 1000px;
     left: 35px;
     position: fixed;
+    background-repeat: no-repeat;
     z-index: 100;
 }
 
@@ -422,4 +423,10 @@ button:hover {
 #finishM {
     padding: 0;
     margin: 328px auto auto -34px;
+}
+
+#aboutbowl {
+    height: 100px;
+    position: relative;
+    margin: 80px 0 40px 150px;
 }
